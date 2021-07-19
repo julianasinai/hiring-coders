@@ -1,0 +1,107 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  display: flex;
+  min-height: 100vh;
+}
+
+.bg-mobile {
+  display: none;
+}
+
+.right {
+  width: 40%;
+  background-image: url("../images/tenis.jpg");
+  box-shadow: inset 10px -10px 8px 8px #EDEEF0;;
+  background-size: cover;
+}
+
+.left {
+  width: 60%;
+  background-color: #EDEEF0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+  /* justify-content: center; */
+}
+
+h1 {
+  color: #A61F38;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.text {
+  color: right;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+#success-message {
+  font-size: 16px;
+  font-weight: 700;
+  color: #4be633;
+  visibility: hidden;
+  margin-top: 10px;
+}
+
+.date {
+  color: #D9415D;
+}
+
+input {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #A61F38;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .bg-mobile {
+    display: block;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+  #form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

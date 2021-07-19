@@ -1,0 +1,28 @@
+.countdown-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.countdown-block {
+  margin: 10px;
+}
+
+.time-element {
+  padding: 20px;
+  background-color: rgba(217, 171, 154, 0.4);
+  border-radius: 5px;
+  font-size: 46px;
+}
+
+.subtitle {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  color: #73513D;
+}

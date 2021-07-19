@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="assets/css/countdown.css">
+  
+  <title>Black Friday</title>
+</head>
+<body>
+  <main>
+    <section class="left">
+      <img class="bg-mobile" src="assets/images/tenis.jpg" />
+      <h1>Black Friday</h1>
+      <p class="text">Olá! Preparamos uma série de ofertas imperdíveis para o <span class="date">dia 26/11</span>.<br>
+        Preencha o formulá abaixo para receber nossas ofertas exclusivas.</p>
+      <div class="countdown-container">
+        <div class="countdown-block">
+          <p id="days" class="time-element">{time}</p>
+          <h3 class="subtitle">Dias</h3>
+        </div>
+        <div class="countdown-block">
+          <p id="hours" class="time-element">{time}</p>
+          <h3 class="subtitle">Horas</h3>
+        </div>
+        <div class="countdown-block">
+          <p id="minutes" class="time-element">{time}</p>
+          <h3 class="subtitle">Minutos</h3>
+        </div>
+        <div class="countdown-block">
+          <p id="seconds" class="time-element">{time}</p>
+          <h3 class="subtitle">Segundos</h3>
+        </div>
+      </div>
+      <div class="form-container">
+        <form action="" id="form">
+          <input id="email" type="text" placeholder="Email" />
+          <button type="submit" form="form">Me avise</button>
+          <div id="success-message">Você será notificado!</div>
+        </form>
+      </div>
+    </section>
+    <div class="right"></div>
+  </main>
+  <script src="./assets/scripts/app.js"></script>
+  <script src="./assets/scripts/countdown.js"></script>
+</body>
+</html>
